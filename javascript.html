@@ -1,0 +1,106 @@
+<h3 style="text-align:center;"><a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="whatIEnjoy.html">What I Enjoy</a> | <a href="javascript.html">Javascript Page</a>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+
+    <h1>Centemeters to Inches Converter</h1>
+    <h3>Problem: Write a program that converts centemeters to inches.</h3>
+    <h4>Pseudocode</h4>
+    <p>Ask user for number<br>
+    Inches = (Centemeters) * .393701;</p>
+    <h4>Solution</h4>
+    <code>var centemeters = parseInt(document.getElementById('centemeters').value); </code><br>   
+    <code>var inches = (centemeters) * .393701;</code><br>
+    <code>document.getElementById("inches").innerHTML = "Inches = " + inches;</code><br>
+    <h4>TRY IT!</h4>
+    Centemeters: <input type="text" id="centemeters" value="50"><br>
+    <button onclick="tempConver()">Convert to Inches</button>
+    <p id="inches"></p>
+    <script> 
+        function tempConver() {
+            var centemeters = parseInt(document.getElementById('centemeters').value);    
+            var inches = (centemeters) * .393701;
+            document.getElementById("inches").innerHTML = "Inches = " + inches;
+        }
+    </script>
+     
+    <h1>Random Number Generator</h1>
+    <h3>Problem: Write a program that generates a random number through 100.</h3>
+    <h4>Pseudocode</h4>
+    <p>Click the "Generate Number" button ro generate a random number between 1 and 100.<br>
+    <h4>Solution</h4>
+    <code>var x = document.getElementById("demo")</code><br>
+    <code>x.innerHTML = Math.floor((Math.random() * 100) + 1);</code>
+    <h4>TRY IT!</h4>
+    Generate a random number between 1 and 100.<br>
+    <button onclick="myFunction()">Generate Number</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo")
+            x.innerHTML = Math.floor((Math.random() * 100) + 1);
+        }
+    </script>
+
+    <h1> Letter Grade Calculator </h1>
+    <h3>Problem: Write a program that calculates what letter grade is associated with that number grade.</h3>
+    <h4>Pseudocode</h4>
+    <p>Ask user for number grade.<br>
+    Calculate which letter grade is associated with that number grade.</p>
+    <h4>Solution</h4>
+    <code>var NumberGrade = document.getElementById('enterGrade').value;</code><br>
+    <code>var MyGrade = getmygrade(NumberGrade);</code><br>
+    <code>document.getElementById("letterGrade").innerHTML = MyGrade;</code><br>
+    <h4>TRY IT!</h4>
+
+<script>
+function process() {
+    var NumberGrade = document.getElementById('enterGrade').value;
+    var MyGrade = getmygrade(NumberGrade);
+    document.getElementById("letterGrade").innerHTML = MyGrade;
+}
+function getmygrade(number) {
+    var letterGrade ="Letter Grade: F";
+    if (number <= 59)
+        letterGrade = "Letter Grade: F";
+    else if (number >= 60 && number <= 69)
+        letterGrade = "Letter Grade: D";
+    else if (number >= 70 && number <= 72)
+        letterGrade = "Letter Grade: C-";
+    else if (number >= 73 && number <= 76)
+        letterGrade = "Letter Grade: C";
+    else if (number >= 77 && number <= 79)
+        letterGrade = "Letter Grade: C+";
+    else if (number >= 80 && number <= 82)
+        letterGrade = "Letter Grade: B-";
+    else if (number >= 83 && number <= 86)
+        letterGrade = "Letter Grade: B";
+    else if (number >= 87 && number <= 89)
+        letterGrade = "Letter Grade: B+";
+    else if (number >= 90 && number <= 92)
+        letterGrade = "Letter Grade: A-";
+    else if (number >= 93 && number <= 96)
+        letterGrade = "Letter Grade: A";
+    else if (number >= 97 && number <= 150)
+        letterGrade = "Letter Grade: A+";
+    else if (number >= 151 && number <= 99999999999999999999)
+	letterGrade = "Letter Grade: Your professor might have made a mistake in the gradebook.";
+
+    return letterGrade
+}
+</script></head>
+<body>
+Enter Grade:<input type="text" id="enterGrade" onchange="process();" onclick="cleargrade();">&nbsp;</input><br>
+<input type =button value='Calculate Letter Grade' onclick="process();"()></input>
+<br>
+<p id="letterGrade"></p>
+<br>
+</body>
+
+</body>
+</html>
