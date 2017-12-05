@@ -1,44 +1,59 @@
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>What I Enjoy</title>
-</head>
-<h3 style="text-align:center;"><a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="whatIEnjoy.html">What I Enjoy</a> | <a href="javascript.html">Javascript Page</a><br><br>
-    <canvas id="myCanvas" width="215" height="50" style="border:5px solid #008000;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <title>What I Enjoy</title>
+        </head>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="whatIEnjoy.html">What I Enjoy</a>
+                <a href="javascript.html">Javascript Page</a>
+            </div><br><br><br><br><br>
+    
+        <canvas id="myCanvas" width="215" height="50" style="border:5px solid #008000;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
 
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "35px Helvetica";
-ctx.style="text-align:center";
-ctx.strokeText("What I Enjoy",8,36);
-</script>
-<h4>One of the first things people usually find out about me is that I am a huge fan of sports. Baseball and football are my personal favorites. Most of my family is from New York so I am a fan of all the teams from New York.</h4>
-<h4>My Favorite Teams</h4>
-<ul>
-<li>New York Yankees</li>
-<li>New York Jets</li>
-<li>New York Knicks</li>
-</ul>
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/New_York_Jets_logo.svg/180px-New_York_Jets_logo.svg.png" alt="New York Jets Logo">
-<h4>My Favorite Foods</h4>
-<ol>
-<li>Cheeseburgers</li>
-<li>Steak</li>
-<li>Pasta</li>
-<li>Fried Chicken</li>
-</ol>
-    <h4>Another thing that I like to do is watch videos. Whether it be on <a href="http://www.youtube.com">YouTube</a>, <a href="http://www.netflix.com">Netflix</a>, or on TV. I just love watching anything in general.</h4>
-<svg width="400" height="180">
-  <rect x="50" y="20" rx="20" ry="20" width="300" height="150"
-  style="fill:red;stroke:white;stroke-width:5;opacity:0.5" />
-  <text fill="#ffffff" font-size="60" font-family="Verdana" x="73" y="120">YouTube</text>
-</svg>
-<h4>My Favorite Shows</h4>
-<ul>
-<li>SportsCenter</li>
-<li>Shark Tank</li>
-<li>Anything else associated with sports</li>
-</ul><p>
-<a href="audio.html"><h4>Some of my favorite songs</h4></a>
-<a href="fieldsreport.html"><h4>My fields report</h4></a>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "35px Helvetica";
+            ctx.style="text-align:center";
+            ctx.strokeText("What I Enjoy",8,36);
+        </script>
+
+        <h3>One of the first things people usually find out about me is that I am a huge fan of sports. Baseball and football are my personal favorites. Most of my family is from New York so I am a fan of all the teams from New York.</h3>
+
+        <h4>My Favorite Teams</h4>
+        <ul>
+            <li>New York Yankees</li>
+            <li>New York Jets</li>
+            <li>New York Knicks</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/New_York_Jets_logo.svg/180px-New_York_Jets_logo.svg.png" alt="New York Jets Logo">
+
+        <h4>My Favorite Foods</h4>
+            <ol>
+                <li>Cheeseburgers</li>
+                <li>Steak</li>
+                <li>Pasta</li>
+                <li>Fried Chicken</li>
+            </ol>
+    
+        <h3>Another thing that I like to do is watch videos. Whether it be on <a href="http://www.youtube.com">YouTube</a>, <a href="http://www.netflix.com">Netflix</a>, or on TV. I just love watching anything in general.</h3>
+
+        <svg width="400" height="180">
+            <rect x="50" y="20" rx="20" ry="20" width="300" height="150"
+            style="fill:red;stroke:white;stroke-width:5;opacity:0.5" />
+            <text fill="#ffffff" font-size="60" font-family="Verdana" x="77" y="120">YouTube</text>
+        </svg>
+
+        <h4>My Favorite Shows</h4>
+            <ul>
+                <li>SportsCenter</li>
+                <li>Shark Tank</li>
+                <li>Anything else associated with sports</li>
+            </ul>
+    </body>
+</html>
