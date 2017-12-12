@@ -13,24 +13,24 @@
                 <a href="javascript.html">Javascript Page</a>
             </div><br><br><br><br>
 
-<h1>Centemeters to Inches Converter</h1>
-    <h2>Problem: Write a program that converts centemeters to inches.</h2>
+<h1>Centimeters to Inches Converter</h1>
+    <h2>Problem: Write a program that converts centimeters to inches.</h2>
     <h3>Pseudocode</h3>
         <p>Ask user for number<br>
-        Inches = (Centemeters) * .393701;</p>
+        Inches = (Centimeters) * .393701;</p>
     <h3>Solution</h3>
-        <code>var centemeters = parseInt(document.getElementById('centemeters').value); </code><br>   
-        <code>var inches = (centemeters) * .393701;</code><br>
+        <code>var centimeters = parseInt(document.getElementById('centimeters').value); </code><br>   
+        <code>var inches = (centimeters) * .393701;</code><br>
         <code>document.getElementById("inches").innerHTML = "Inches = " + inches;</code><br>
     <h3>TRY IT!</h3>
         <label for="centimeters">Centimeters:</label>
-        <input type="text" id="centemeters" value="50"><br>
+        <input type="text" id="centimeters" value="50"><br>
         <button onclick="tempConver()">Convert to Inches</button>
         <p id="inches"></p>
     <script> 
         function tempConver() {
-            var centemeters = parseInt(document.getElementById('centemeters').value);    
-            var inches = (centemeters) * .393701;
+            var centimeters = parseInt(document.getElementById('centimeters').value);    
+            var inches = (centimeters) * .393701;
             document.getElementById("inches").innerHTML = "Inches = " + inches;
         }
     </script>
