@@ -14,16 +14,17 @@
             </div><br><br><br><br>
 
 <h1>Centemeters to Inches Converter</h1>
-    <h3>Problem: Write a program that converts centemeters to inches.</h3>
-    <h4>Pseudocode</h4>
+    <h2>Problem: Write a program that converts centemeters to inches.</h2>
+    <h3>Pseudocode</h3>
         <p>Ask user for number<br>
         Inches = (Centemeters) * .393701;</p>
-    <h4>Solution</h4>
+    <h3>Solution</h3>
         <code>var centemeters = parseInt(document.getElementById('centemeters').value); </code><br>   
         <code>var inches = (centemeters) * .393701;</code><br>
         <code>document.getElementById("inches").innerHTML = "Inches = " + inches;</code><br>
-    <h4>TRY IT!</h4>
-	<label>Centemeters:</label><input type="text" id="centemeters" value="50"><br>
+    <h3>TRY IT!</h3>
+        <label for="centimeters">Centimeters:</label>
+        <input type="text" id="centemeters" value="50"><br>
         <button onclick="tempConver()">Convert to Inches</button>
         <p id="inches"></p>
     <script> 
@@ -35,13 +36,13 @@
     </script>
      
 <h1>Random Number Generator</h1>
-    <h3>Problem: Write a program that generates a random number through 100.</h3>
-    <h4>Pseudocode</h4>
+    <h2>Problem: Write a program that generates a random number through 100.</h2>
+    <h3>Pseudocode</h3>
         <p>Click the "Generate Number" button ro generate a random number between 1 and 100.<br>
-    <h4>Solution</h4>
+    <h3>Solution</h3>
         <code>var x = document.getElementById("demo")</code><br>
         <code>x.innerHTML = Math.floor((Math.random() * 100) + 1);</code>
-    <h4>TRY IT!</h4>
+    <h3>TRY IT!</h3>
         Generate a random number between 1 and 100.<br>
         <button onclick="myFunction()">Generate Number</button>
         <p id="demo"></p>
@@ -53,15 +54,15 @@
     </script>
 
 <h1> Letter Grade Calculator </h1>
-    <h3>Problem: Write a program that calculates what letter grade is associated with that number grade.</h3>
-    <h4>Pseudocode</h4>
+    <h2>Problem: Write a program that calculates what letter grade is associated with that number grade.</h2>
+    <h3>Pseudocode</h3>
         <p>Ask user for number grade.<br>
         Calculate which letter grade is associated with that number grade.</p>
-    <h4>Solution</h4>
+    <h3>Solution</h3>
         <code>var NumberGrade = document.getElementById('enterGrade').value;</code><br>
         <code>var MyGrade = getmygrade(NumberGrade);</code><br>
         <code>document.getElementById("letterGrade").innerHTML = MyGrade;</code><br>
-    <h4>TRY IT!</h4>
+    <h3>TRY IT!</h3>
     <script>
         function process() {
             var NumberGrade = document.getElementById('enterGrade').value;
@@ -94,11 +95,11 @@
         letterGrade = "Letter Grade: A+";
     else if (number >= 151 && number <= 99999999999999999999)
 	letterGrade = "Letter Grade: Your professor might have made a mistake in the gradebook.";
-
     return letterGrade
 }
     </script>
-        Enter Grade:<input type="text" id="enterGrade" onchange="process();" onclick="cleargrade();">&nbsp;<br>
+        <label for="enterGrade">Enter Grade:</label>
+        <input type="text" id="enterGrade" onchange="process();" onclick="cleargrade();">&nbsp;<br>
         <input type =button value='Calculate Letter Grade' onclick="process();"()><br>
         <p id="letterGrade"></p><br>
 
