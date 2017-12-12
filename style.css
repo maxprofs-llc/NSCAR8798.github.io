@@ -1,5 +1,6 @@
 body {
     background-color: lightblue;
+    margin: 0 auto;
 }
 
 h1 {
@@ -15,4 +16,27 @@ p {
 h1 {
 	font-family: helvetica;
 	font-size: 35px;
+}
+
+.nav {
+    z-index: 10;
+    float: fixed;
+    position: fixed;
+    border-bottom: 1px solid #000000;
+    padding: 30px 30px 30px 30px;
+    font-size: 15px;
+    background: #ffffff;
+    width: 100%;
+}
+
+.nav a {
+    color: #000000;
+    text-decoration: none;
+    font-family: arial;
+    margin: 15px;
+}
+
+.nav a:hover {
+    color: green;
+    text-transform: none;
 }
