@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <title>Ceasar Cipher</title>
+        </head>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="whatIEnjoy.html">What I Enjoy</a>
+                <a href="javascript.html">Javascript Page</a>
+            </div><br><br><br><br>
+
+<p>Click the button to display the unicode of the first character in the string "HELLO WORLD".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+    var stringToEncode = "ABCDEF";
+    
+    var unicode;
+    var shiftedUnicode;
+    var encodedText = "";
+    var lengthOfString = stringToEncode.length;
+    
+    for (var index = 0; index < lengthOfString; index++) {
+    	unicode = stringToEncode.charCodeAt(index);
+    	shiftedUnicode = unicode + 3;
+    	encodedText += String.fromCharCode(shiftedUnicode);
+}
+    
+document.getElementById("demo").innerHTML = encodedText;
+}
+</script>
+
+    </body>
+</html>
