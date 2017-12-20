@@ -1,4 +1,4 @@
-/* style.css document */
+/* Nick Scardina, CSS document, style sheet */
 
 body {
     background-color: lightblue;
@@ -32,7 +32,7 @@ h3 {
 
 .nav {
     z-index: 10;
-    float: fixed;
+    float: none;
     position: fixed;
     border-bottom: 1px solid #000000;
     padding: 30px 30px 30px 30px;
